@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>বান্দরবান ব্লাড ডোনার'স ক্লাব</title>
+<style>
+:root{--red:#c91524;--dark:#101828;--green:#075e36;--light:#fff7f7;--muted:#667085}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;background:#fafafa;color:#182230}
+header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:auto;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}.brand img{width:48px;height:48px;object-fit:contain}.brand span{font-size:18px}
+nav a{color:#333;text-decoration:none;margin-left:14px;font-weight:600;font-size:14px}
+.btn{border:0;border-radius:10px;padding:11px 16px;font-weight:700;cursor:pointer}.primary{background:var(--red);color:#fff}.outline{background:#fff;border:1px solid #ddd}
+.hero{background:linear-gradient(135deg,#fff1f2,#fff);padding:55px 18px}.hero-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
+.badge{display:inline-block;background:#ffe4e6;color:#a30f1c;padding:7px 12px;border-radius:999px;font-weight:700;font-size:13px}
+h1{font-size:42px;line-height:1.15;margin:15px 0}h2{font-size:28px}.hero p{color:#667085;font-size:17px;line-height:1.7}
+.hero-logo{display:flex;justify-content:center}.hero-logo img{width:min(330px,75vw);border-radius:50%;box-shadow:0 15px 40px #0002}
+section{max-width:1100px;margin:auto;padding:45px 18px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #eee;border-radius:16px;padding:22px;box-shadow:0 4px 18px #0000000a}.icon{font-size:30px}
+.form{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.full{grid-column:1/-1}label{font-weight:700;font-size:14px}input,select,textarea{width:100%;margin-top:7px;padding:12px;border:1px solid #ddd;border-radius:9px;font:inherit}textarea{min-height:100px}
+.note{background:#fff7ed;border:1px solid #fed7aa;padding:13px;border-radius:10px;color:#9a3412}
+footer{background:#101828;color:#fff;padding:30px 18px;text-align:center;margin-top:20px}
+.search{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;margin-bottom:18px}.donors{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.donor strong{font-size:18px}.blood{display:inline-block;background:#fee2e2;color:#b42318;padding:4px 9px;border-radius:999px;font-weight:800;margin:6px 0}
+#admin{display:none}.adminbar{background:#101828;color:#fff;padding:15px;border-radius:14px;margin-bottom:18px;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.small{font-size:13px;color:#667085}.hidden{display:none!important}
+@media(max-width:800px){.hero-inner{grid-template-columns:1fr;text-align:center}.grid,.donors{grid-template-columns:1fr}.form{grid-template-columns:1fr}.search{grid-template-columns:1fr}nav{display:none}h1{font-size:34px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<div class="brand"><img src="logo.jpg"><span>বান্দরবান ব্লাড ডোনার'স ক্লাব</span></div>
+<nav><a href="#home">হোম</a><a href="#search">ডোনার খুঁজুন</a><a href="#request">রক্তের প্রয়োজন</a><a href="#register">ডোনার রেজিস্ট্রেশন</a><a href="#admin-login">অ্যাডমিন</a></nav>
+</div></header>
+
+<main id="home">
+<section class="hero"><div class="hero-inner">
+<div><span class="badge">স্থাপিত ২০২৬ • মানবতার সেবায়</span><h1>রক্ত দিন,<br>জীবন বাঁচান।</h1>
+<p>বান্দরবান ব্লাড ডোনার'স ক্লাবের মাধ্যমে জরুরি সময়ে স্বেচ্ছায় রক্তদাতা খুঁজে পাওয়া ও রক্তের প্রয়োজন জানানো সহজ করুন।</p>
+<a class="btn primary" href="#search">রক্তদাতা খুঁজুন</a>
+<a class="btn outline" href="#request">রক্তের প্রয়োজন জানান</a></div>
+<div class="hero-logo"><img src="logo.jpg" alt="বান্দরবান ব্লাড ডোনার'স ক্লাব"></div>
+</div></section>
+
+<section><h2>আমাদের সেবা</h2><div class="grid">
+<div class="card"><div class="icon">🩸</div><h3>রক্তদাতা খুঁজুন</h3><p>ব্লাড গ্রুপ ও এলাকা অনুযায়ী নিবন্ধিত ডোনার খুঁজে দেখুন।</p></div>
+<div class="card"><div class="icon">🚨</div><h3>রক্তের প্রয়োজন জানান</h3><p>জরুরি রক্তের প্রয়োজন হলে আবেদন পাঠান।</p></div>
+<div class="card"><div class="icon">🤝</div><h3>ডোনার হিসেবে যুক্ত হন</h3><p>আপনার তথ্য নিবন্ধন করে ভবিষ্যতে মানুষের পাশে দাঁড়ান।</p></div>
+</div></section>
+
+<section id="search"><h2>রক্তদাতা খুঁজুন</h2><div class="search">
+<select id="bloodSearch"><option value="">সব ব্লাড গ্রুপ</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select>
+<input id="areaSearch" placeholder="এলাকা লিখুন">
+<button class="btn primary" onclick="renderDonors()">খুঁজুন</button></div>
+<div id="donorResults" class="donors"></div></section>
+
+<section id="request"><h2>রক্তের প্রয়োজনের আবেদন</h2>
+<form class="form card" onsubmit="submitRequest(event)">
+<label>রোগীর নাম<input name="patient" required></label><label>রক্তের গ্রুপ<select name="blood" required><option value="">নির্বাচন করুন</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></label>
+<label>হাসপাতাল/স্থান<input name="hospital" required></label><label>যোগাযোগ নম্বর<input name="phone" required></label>
+<label>কত ব্যাগ প্রয়োজন<input name="bags" type="number" min="1" required></label><label>কখন প্রয়োজন<input name="when" placeholder="যেমন: আজ সন্ধ্যা ৭টা"></label>
+<label class="full">অতিরিক্ত তথ্য<textarea name="details"></textarea></label>
+<div class="full"><button class="btn primary">আবেদন পাঠান</button></div></form>
+</section>
+
+<section id="register"><h2>ডোনার রেজিস্ট্রেশন</h2>
+<form class="form card" onsubmit="registerDonor(event)">
+<label>নাম<input name="name" required></label><label>ব্লাড গ্রুপ<select name="blood" required><option value="">নির্বাচন করুন</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></label>
+<label>এলাকা<input name="area" required></label><label>যোগাযোগ নম্বর<input name="phone" required></label>
+<label class="full">শেষ রক্তদানের তারিখ (ঐচ্ছিক)<input name="last"></label>
+<div class="full note">আপনার তথ্য শুধুমাত্র রক্তদানের সমন্বয়ের কাজে ব্যবহার করার জন্য দেওয়া হবে। প্রকাশের আগে প্রশাসনের যাচাই/অনুমতি থাকা উচিত।</div>
+<div class="full"><button class="btn primary">ডোনার হিসেবে নিবন্ধন করুন</button></div></form>
+</section>
+
+<section id="admin-login"><h2>অ্যাডমিন প্যানেল</h2>
+<div class="card">
+<p>এটি প্রথম ভার্সনের ডেমো অ্যাডমিন প্যানেল।</p>
+<form onsubmit="login(event)" class="form"><label>ইউজারনেম<input id="user" required></label><label>পাসওয়ার্ড<input id="pass" type="password" required></label><div class="full"><button class="btn primary">লগইন</button></div></form>
+<p class="small">ডেমো লগইন: admin / bbdc2026</p>
+</div></section>
+
+<section id="admin"><div class="adminbar"><strong>অ্যাডমিন ড্যাশবোর্ড</strong><button class="btn outline" onclick="logout()">লগআউট</button></div>
+<div class="grid">
+<div class="card"><h3>ডোনার</h3><div id="countDonor">0</div></div><div class="card"><h3>রক্তের আবেদন</h3><div id="countReq">0</div></div><div class="card"><h3>যোগাযোগ তথ্য</h3><p class="small">পরে এখান থেকে ফোন, ইমেইল ও Facebook লিংক আপডেট করা যাবে।</p></div>
+</div>
+<div class="card" style="margin-top:18px"><h3>রক্তের আবেদনসমূহ</h3><div id="requestList"></div></div>
+<div class="card" style="margin-top:18px"><h3>ডোনার তালিকা</h3><div id="adminDonors"></div></div>
+</section>
+</main>
+
+<footer>
+<strong>বান্দরবান ব্লাড ডোনার'স ক্লাব</strong><br>
+<span class="small" style="color:#ddd">স্বেচ্ছায় রক্ত দিন • জীবন বাঁচান • স্থাপিত ২০২৬</span>
+<div style="margin-top:14px;border-top:1px solid #344054;padding-top:12px">
+<span class="small" style="color:#98a2b3">Developed by</span><br>
+<strong style="font-size:16px">Md Farhad Uddin</strong>
+</div>
+</footer>
+
+<script>
+const seed=[{name:"ডেমো ডোনার",blood:"O+",area:"বান্দরবান",phone:"০১XXXXXXXXX"}];
+let donors=JSON.parse(localStorage.getItem("bbdc_donors")||"null")||seed;
+let requests=JSON.parse(localStorage.getItem("bbdc_requests")||"[]");
+
+function save(){localStorage.setItem("bbdc_donors",JSON.stringify(donors));localStorage.setItem("bbdc_requests",JSON.stringify(requests))}
+function renderDonors(){
+ const b=document.getElementById("bloodSearch").value.toLowerCase(), a=document.getElementById("areaSearch").value.toLowerCase();
+ const r=donors.filter(d=>(!b||d.blood.toLowerCase()==b)&&(!a||d.area.toLowerCase().includes(a)));
+ document.getElementById("donorResults").innerHTML=r.length?r.map(d=>`<div class="card donor"><strong>${esc(d.name)}</strong><br><span class="blood">${esc(d.blood)}</span><p>📍 ${esc(d.area)}</p><p>📞 ${esc(d.phone)}</p></div>`).join(""):"<div class='card'>কোনো ডোনার পাওয়া যায়নি।</div>";
+}
+function registerDonor(e){e.preventDefault();let f=new FormData(e.target);donors.push(Object.fromEntries(f));save();e.target.reset();alert("ডোনার রেজিস্ট্রেশন গ্রহণ করা হয়েছে।");renderDonors();updateAdmin()}
+function submitRequest(e){e.preventDefault();let f=new FormData(e.target);requests.push({...Object.fromEntries(f),created:new Date().toLocaleString("bn-BD")});save();e.target.reset();alert("রক্তের প্রয়োজনের আবেদন গ্রহণ করা হয়েছে। অ্যাডমিন প্যানেল থেকে দেখা যাবে।");updateAdmin()}
+function login(e){e.preventDefault();if(document.getElementById("user").value==="admin"&&document.getElementById("pass").value==="bbdc2026"){document.getElementById("admin-login").classList.add("hidden");document.getElementById("admin").style.display="block";updateAdmin();location.hash="admin"}else alert("ভুল ইউজারনেম বা পাসওয়ার্ড।")}
+function logout(){document.getElementById("admin").style.display="none";document.getElementById("admin-login").classList.remove("hidden")}
+function updateAdmin(){
+document.getElementById("countDonor").textContent=donors.length;document.getElementById("countReq").textContent=requests.length;
+document.getElementById("adminDonors").innerHTML=donors.map((d,i)=>`<p><b>${esc(d.name)}</b> — ${esc(d.blood)} — ${esc(d.area)} — ${esc(d.phone)} <button onclick="delDonor(${i})">মুছুন</button></p>`).join("")||"কোনো ডোনার নেই";
+document.getElementById("requestList").innerHTML=requests.map((r,i)=>`<div style="border-bottom:1px solid #eee;padding:10px 0"><b>${esc(r.patient)}</b> — ${esc(r.blood)} — ${esc(r.hospital)} — ${esc(r.phone)} — ${esc(r.bags)} ব্যাগ <button onclick="delReq(${i})">সম্পন্ন/মুছুন</button><br><span class="small">${esc(r.created||"")}</span></div>`).join("")||"কোনো আবেদন নেই";
+}
+function delDonor(i){if(confirm("ডোনারটি মুছবেন?")){donors.splice(i,1);save();updateAdmin();renderDonors()}}
+function delReq(i){if(confirm("আবেদনটি মুছবেন?")){requests.splice(i,1);save();updateAdmin()}}
+function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+renderDonors();
+</script>
+</body></html>
